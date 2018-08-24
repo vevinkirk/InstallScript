@@ -33,7 +33,7 @@ do
             ;;
         "ZSH syntax highlighting")
             echo "You chose to install ZSH syntax highlighting"
-            ./ZSHSynatxHighlightingInstall.sh
+            ./ZSHSyntaxHighlightingInstall.sh
             ;;
         "Option 3")
             echo "You chose choice $REPLY which is $opt"
