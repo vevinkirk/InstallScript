@@ -1,5 +1,5 @@
 #!/bin/bash
-
+test
 #Menu for Install Script
 echo "This program is constantly updated and will install applications for you. The list will be presented below and will fetch and install programs for you. This script comes with no warranty. Please use at your own risk."
 prompt='Please Enter Your Choice: '
