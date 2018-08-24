@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 #if no command line arg given
 #set OS to unknown
@@ -14,7 +14,7 @@ fi
 
 #use case statement to choose OS
 case $os in
-    "ubuntu")  sudo apt install zsh &&  zsh --version && sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"&& git clone https://github.com/zsh-users/zsh-syntax-highlighting.git && echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc && source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ;;
-    "centos")  sudo yum -y install zsh && zsh --version && sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"&&git clone https://github.com/zsh-users/zsh-syntax-highlighting.git && echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc && source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ;;
+    "ubuntu")  sudo apt install zsh &&  zsh --version && sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)";;
+    "centos")  sudo yum -y install zsh && zsh --version && sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)";;
     *) echo "Make sure arguments are lowercase or that response is not recongized by this program";;
 esac
