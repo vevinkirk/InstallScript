@@ -10,18 +10,22 @@ do
         "ZSH Install")
             echo "You Chose Choice ZSH Install"
             osprompt='Choose your option in OS: '
-            osoptions=("ubuntu" "centos" "Quit")
+            osoptions=("apt" "yum" "pacman" "Quit")
             select osopt in "${osoptions[@]}"
             do
                 case $osopt in
-                    "ubuntu")
-                        echo "You Chose ubuntu Install"
+                    "apt")
+                        echo "You chose apt Install"
                         ./ZSHAutoInstall.sh ubuntu
                         ;;
-                    "centos")
-                        echo "You Chose centos Install"
+                    "yum")
+                        echo "You chose yum Install"
                         ./ZSHAutoInstall.sh centos
                         ;;
+		    "pacman")
+			echo "You chose pacman install"
+			echo "test"
+			;;
                     "Quit")
                         break
                         ;;

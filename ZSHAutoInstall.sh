@@ -14,7 +14,8 @@ fi
 
 #use case statement to choose OS
 case $os in
-    "ubuntu")  sudo apt install zsh &&  zsh --version && sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)";;
-    "centos")  sudo yum -y install zsh && zsh --version && sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)";;
+    "apt")  sudo apt install zsh &&  zsh --version && sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)";;
+    "yum")  sudo yum -y install zsh && zsh --version && sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)";;
+    "pacman") echo "test";;
     *) echo "Make sure arguments are lowercase or that response is not recongized by this program";;
 esac
