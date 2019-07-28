@@ -16,11 +16,11 @@ do
                 case $osopt in
                     "apt")
                         echo "You chose apt Install"
-                        ./ZSHAutoInstall.sh ubuntu
+                        ./ZSHAutoInstall.sh apt
                         ;;
                     "yum")
                         echo "You chose yum Install"
-                        ./ZSHAutoInstall.sh centos
+                        ./ZSHAutoInstall.sh yum
                         ;;
 		    "pacman")
 			echo "You chose pacman install"
