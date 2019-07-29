@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vevinkirk/InstallScript.svg?branch=master)](https://travis-ci.org/vevinkirk/InstallScript)
+
 # InstallScript
 System setup install script
 
