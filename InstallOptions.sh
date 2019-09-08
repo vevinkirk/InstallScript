@@ -88,7 +88,30 @@ do
 			echo "invalid options $REPLY";;
 		esac
 	     done
-	     ;;	     
+	     ;;
+	"tmux")
+    	    echo "You chose to install tmux"
+	    osprompt='Choose your package manager: '
+	    osoptions=("apt" "pacman" "Quit")
+	    select osopt in "${osoptions[@]}"
+	    do
+		case $osopt in
+	            "apt")
+	    		echo "You chose apt install"
+    			./modules/TmuxInstall.sh apt
+			;;
+		    "pacman")
+    			echo "You chose pacman install"
+			./modules/TmuxInstall.sh pacman
+			;;
+		    "Quit")
+    			break
+			;;
+		*)
+			echo "invalid options $REPLY";;
+		esac
+	     done
+	     ;;	 	     
         "Quit")
             break
             ;;
