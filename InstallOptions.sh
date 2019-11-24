@@ -37,11 +37,11 @@ do
             ;;
         "ZSH syntax highlighting")
             echo "You chose to install ZSH syntax highlighting"
-            chmod +x ZSHSyntaxHighlightingInstall.sh && ./modules/ZSHSyntaxHighlightingInstall.sh
+            chmod +x ./modules/ZSHSyntaxHighlightingInstall.sh && ./modules/ZSHSyntaxHighlightingInstall.sh
             ;;
         "SpaceMacs")
             echo "You chose choice $REPLY which is $opt"
-	    chmod +x SpaceMacsInstall.sh && ./modules/SpaceMacsInstall.sh
+	    chmod +x ./modules/SpaceMacsInstall.sh && ./modules/SpaceMacsInstall.sh
             ;;
 	"AwesomeWM")
 	    echo "You chose AwesomeWM install"
